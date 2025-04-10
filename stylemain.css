@@ -1,0 +1,472 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background: linear-gradient(to bottom, #fdf1a8, #fdf1a8);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #fce44d;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    height: 30px;
+    margin-right: 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9900;
+    transform: scale(1.05);
+  }
+  
+  /* Main Content */
+  .content {
+    padding: 60px 30px;
+    color: black;
+  }
+  
+  .content h1 {
+    font-size: 130px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 24px;
+    max-width: 400px;
+    line-height: 1.6;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .fade-in-delayed {
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+    animation-delay: 0.6s;
+  }
+  
+  .slide-in {
+    opacity: 0;
+    animation: slideInLeft 1.2s ease forwards;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 36px;
+    }
+  
+    .content p {
+      font-size: 14px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .quiz-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fef6c4;
+  }
+  
+  .quiz-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-card {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff8d0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease;
+  }
+  
+  .quiz-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .options button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #ffe87c;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .options button:hover {
+    background: #ffda49;
+  }
+  
+  #result {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .next-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background: #ffc107;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+#page5{
+    height: 100%;
+    width: 100%;
+    background-color: #FAF0CA ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header_page5{
+    /* position: fixed; */
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(200, 200, 215); */
+}
+#wfg{
+    font-size: 350%;
+    /* margin-left: 80px; */
+    padding: 25px;
+}
+
+
+#not_header{
+    width: 100%; 
+    height: 85%;
+    display: flex;
+}
+#fakeheader{
+    height: 15%;
+    width: 100%;
+
+}
+#game_img{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#game_info{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(43, 195, 226); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gamedata{
+    width: 75%;
+    height: 75%;
+    /* background-color: aliceblue; */
+    font-size: 180%;
+    
+}
+
+#img_game{
+    height: 75%;
+    width: 75%;
+    /* background-color: aquamarine; */
+
+}
+#img_game img{
+    height: 100%;
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+  
+  .map {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  
+  .card h2 img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+  #headershanks1{
+    font-size: 350%;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#image11 img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+#image11{
+
+    
+    height: 70px;
+    width: 70px;
+}
+#first1{
+    margin-top: 2rem;
+    height: 250px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    
+
+}
+#second1{
+    margin-top: 2rem;
+    height: 250px;
+    width: 100%;
+    /* background-color: aqua; */
+    
+    display: flex;
+    justify-content: center;
+}
+.midelement1{
+    margin-left: 25px ;
+    margin-top: 5px;
+}
+.header2{
+    display: flex;
+}
+.Sports{
+    border-radius: 50px;
+    margin-left: 150px;
+    margin-right: 80px;
+    background-color: #CF9DC6B2;
+    width: 30%;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    
+}
+.content1{
+    margin-left: 60px;
+}
+.stem{
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 100px;
+    background-color: #CF9DC6B2;
+    width: 30%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.cl{
+    border-radius: 50px;
+    margin-left: 150px;
+    margin-right: 80px;
+    background-color: #CF9DC6B2;
+    width: 30%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.Finance{
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 100px;
+    background-color: #CF9DC6B2;
+    width: 30%;
+    height: 100%;
+    
+    /* display: flex;
+    justify-content: center; */
+}
+#headershanks2{
+    font-size: 350%;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.midelement2{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.header2{
+    display: flex;
+}
+#image12 img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+#image12{
+    height: 70px;
+    width: 70px;
+}
+.content2{
+    margin-left: 70px;
+}
+#first2{
+    display: flex;
+    height: 160px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+#second2{
+    display: flex;
+    height: 160px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+#third2{
+    display: flex;
+    height: 160px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.support{
+    height: 100%;
+    width: 30%;
+    background-color: #CF9DC6B2;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+.promote{
+    margin-left: 150px;
+    height: 100%;
+    width: 30%;
+    background-color: #CF9DC6B2;
+    border-radius: 50px;
+}
+.violence{
+    height: 100%;
+    width: 30%;
+    background-color: #CF9DC6B2;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+.improve{
+    height: 100%;
+    width: 30%;
+    border-radius: 50px;
+    margin-left: 150px;
+    background-color: #CF9DC6B2;
+}
+.opportunities{
+    height: 100%;
+    width: 30%;
+    border-radius: 50px;
+    background-color: rgba(207, 157, 198, 0.698);
+    margin-right: 100px;
+}
+.healthcare{
+    height: 100%;
+    width: 30%;
+    border-radius: 50px;
+    margin-left: 150px;
+    background-color: #CF9DC6B2;
+}
